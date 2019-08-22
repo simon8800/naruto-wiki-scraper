@@ -91,8 +91,8 @@ async function getCharacterInfoFrom(page) {
 //     let th = row.querySelector('th')
 //     if (row.querySelector('td')) {
 //       td = row.querySelector('td');
-//       let attr = th.innerText.toLowerCase();
-//       let value = td.innerText;
+//       let attr = attributeMaker(th.innerText);
+//       let value = td.innerText.trim();
 //       results[attr] = value;
 //     }
 //   }
@@ -100,7 +100,7 @@ async function getCharacterInfoFrom(page) {
 
 // function attributeMaker(string) {
 //   string = string.split(" ");
-//   if (string.length === 1) return string.toLowerCase();
+//   if (string.length === 1) return string[0].toLowerCase();
 //   for (let i = 0; i < string.length; i++) {
 //       if (i === 0) {
 //           string[i] = string[i].toLowerCase();
