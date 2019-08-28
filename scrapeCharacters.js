@@ -60,10 +60,11 @@ async function scrape() {
   //   fs.writeFileSync('characters.json', json);
   // }
 
-  for (let i = characterLinks.length - 3; i < characterLinks.length; i++) {
+  for (let i = 0; i < characterLinks.length; i++) {
     let link = characterLinks[i];
     await page.goto(link, {waitUntil: 'networkidle2'});
     let results = await pageScraper(page);
+    results["wikipage"] = link;
     characters.push(results);
     let json = JSON.stringify(characters);
     fs.writeFileSync('characters.json', json);
