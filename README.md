@@ -8,13 +8,13 @@ This program scrapes data on all characters from the [Naruto Wiki Page](https://
 - [x] Scrape all the characters' links
 - [x] Find elements on each character's link to scrape from
 - [x] Scrape basic info from each character's link
-- [] Decide what info I want to clean and how to clean it
-- [] Clean character's data
-- [] Start building a GraphQL API with clean data
+- [ ] Decide what info I want to clean and how to clean it
+- [ ] Clean character's data
+- [ ] Start building a GraphQL API with clean data
 
 ## STRETCH GOALS
 
-- [] Include more data instead of only basic info
+- [ ] Include more data instead of only basic info
 
 ## TOOLS
 
